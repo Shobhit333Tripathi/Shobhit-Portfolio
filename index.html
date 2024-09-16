@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      * {
+        scroll-behavior: smooth;
+            }
+    </style>
+  </head>
+  <body class="">
+    <div class="relative h-full w-full bg-zinc-800">
+      <div
+        class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"
+      ></div>
+
+      <nav class="h-full w-full bg-zinc-700 z-50 sticky top-0">
+        <ul
+          class="flex justify-end item-center px-10 pr-48 space-x-8 py-2 text-xl"
+        >
+          <li
+            class="text-3xl font-semibold text-white pr-52 font-mono transition-all"
+          >
+            <a href="#" class="hover:cursor-none text-white relative"
+              ><span class="font-extrabold text-5xl text-yellow-800">P</span
+              >ortfolio.</a
+            >
+          </li>
+          <li class="pt-1 text-white hover:text-yellow-800 cursor-pointer relative">
+            <a
+              href="#About"
+              class="about font-bold text-white hover:text-yellow-800 cursor-pointer transition-all"
+              >About Me</a
+            >
+          </li>
+          <li class="pt-1 text-white hover:text-yellow-800 cursor-pointer relative">
+            <a
+              href="#Projects"
+              class="projects font-bold hover:text-yellow-800 cursor-pointer transition-all"
+              id="projects"
+              >Projects</a
+            >
+          </li>
+          <li class="pt-1 text-white cursor-pointer relative">
+            <a
+              href="#Contact"
+              class="contact font-bold hover:text-yellow-800 cursor-pointer transition-all"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <hr class="h-20" />
+      
+      <div class="flex flex-col justify-center items-center relative">
+        <h1 class="mx-24 mt-8 text-7xl font-bold text-yellow-800">Hey !</h1>
+        <h1 class="mx-24 mt-4 text-6xl font-bold text-white">I'm</h1>
+        <h1 class="mx-24 my-4 text-6xl font-bold text-white">SHOBHIT.</h1>
+        <h3 class="text-4xl text-yellow-800 mx-28">
+          I am a Frontend Web Developer-
+        </h3>
+        <h3 class="text-4xl text-yellow-800 font-mono mx-2">
+          from Greater Noida, G.B Nagar, U.P, India.
+        </h3>
+        <button
+          class="px-8 py-4 m-8 bg-slate-900 text-xl font-semibold rounded-md hover:rounded-3xl cursor-pointer hover:bg-slate-800 text-gray-500 hover:text-yellow-900 transition-all"
+        >
+          <a
+            href="https://drive.google.com/file/d/1EzWwYnivx1VduNfwN40bEqsU1Ry-NrcQ/view"
+            target="_blank"
+            >Download CV</a
+          >
+        </button>
+      </div>
+      <div class="flex justify-center pt-4 pb-20">
+        <a
+          href="https://www.linkedin.com/in/shobhit-tripathi-a7198a266/overlay/about-this-profile/"
+          class="relative"
+          ><img
+            src="/linkedin-in-brands-solid.svg"
+            class="h-6 w-6 bg-white p-1 rounded-md hover:bg-sky-700"
+            alt=""
+        /></a>
+
+        <a href="https://github.com/Shobhit333Tripathi" class="relative"
+          ><svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 496 512"
+            class="w-6 h-6 ml-4 hover:text-white hover:scale-110 transition-all"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            ></path></svg
+        ></a>
+        <a
+          href="https://www.instagram.com/shobhi18t_tripathi/"
+          class="relative"
+          ><svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 448 512"
+            class="w-6 h-6 ml-4 text-white hover:text-pink-500 hover:scale-110 transition-all"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            ></path></svg
+        ></a>
+    </div>
+      <hr />
+      <!--about scetion-->
+      <section id="About" class="flex w-full flex-col z-50">
+        <h1
+          class="flex flex-col items-center py-6 text-6xl font-bold text-gray-500 hover:cursor-none relative"
+        >
+          About Me
+        </h1>
+        <div class="flex justify-between w-full">
+          <div class="para w-1/3 pb-10">
+            <p class="text-xl font-semibold pl-10 w-full text-white">
+              I’m <span class="font-extrabold">Shobhit Tripathi</span>, a
+              passionate web developer currently studying at PIIT. I reside in
+              the Cassia Estate Society Pocket A, Greater Noida, Gautam Buddh Nagar, U.P,
+              India. <br />
+              &nbsp; &nbsp; &nbsp; My skill set includes HTML, CSS, JavaScript,
+              and I am proficient in using VS Code and GitHub for version
+              control and collaboration. I enjoy creating dynamic and responsive
+              web applications, and I’m always eager to learn new technologies
+              and improve my skills. With effective communication and teamwork
+              skills, I aim to contribute my expertise to impactful tech
+              projects that drive positive change.
+            </p>
+          </div>
+          <div class="flex-col  justify-center pt-40 pl-48 space-x-6">
+            <div class="pl-4 relative">
+            <a
+              href="https://www.linkedin.com/in/shobhit-tripathi-a7198a266/overlay/about-this-profile/"
+              class=""
+              ><img
+                src="/linkedin-in-brands-solid.svg"
+                class="h-12 w-12 bg-white p-1 rounded-md hover:bg-sky-700"
+                alt=""
+            /></a>
+            </div>
+            <a href="https://github.com/Shobhit333Tripathi" class="relative"
+              ><svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 496 512"
+                class="w-12 h-12 ml-4 hover:text-white hover:scale-110 transition-all"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                ></path></svg
+            ></a>
+            <a
+              href="https://www.instagram.com/shobhi18t_tripathi/"
+              class="relative"
+              ><svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                class="w-12 h-12 ml-4 text-white hover:text-pink-500 hover:scale-110 transition-all"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                ></path></svg
+            ></a>
+          </div>
+          <div class="flex w-1/2 tools">
+            <div class="mx-auto">
+              <h2 class="text-4xl font-bold pt-16 text-white">TOOLS THAT I USE</h2>
+              <div class="flex justify-center space-x-6 pt-4 image">
+                <a href="icons8-vs-code.svg" class="relative hover:cursor-none"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="96px"
+                    height="96px"
+                    class="h-30 w-30"
+                  >
+                    <path
+                      fill="#29b6f6"
+                      d="M44,11.11v25.78c0,1.27-0.79,2.4-1.98,2.82l-8.82,4.14L34,33V15L33.2,4.15l8.82,4.14 C43.21,8.71,44,9.84,44,11.11z"
+                    />
+                    <path
+                      fill="#0277bd"
+                      d="M9,33.896L34,15V5.353c0-1.198-1.482-1.758-2.275-0.86L4.658,29.239 c-0.9,0.83-0.849,2.267,0.107,3.032c0,0,1.324,1.232,1.803,1.574C7.304,34.37,8.271,34.43,9,33.896z"
+                    />
+                    <path
+                      fill="#0288d1"
+                      d="M9,14.104L34,33v9.647c0,1.198-1.482,1.758-2.275,0.86L4.658,18.761 c-0.9-0.83-0.849-2.267,0.107-3.032c0,0,1.324-1.232,1.803-1.574C7.304,13.63,8.271,13.57,9,14.104z"
+                    /></svg
+                ></a>
+                <a href="icons8-chat-gpt.svg" class="relative hover:cursor-none">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 64 64"
+                    width="96px"
+                    height="96px"
+                    baseProfile="basic"
+                  >
+                    <linearGradient
+                      id="9yv_OTO3P9eepfu7Rtqera"
+                      x1="32"
+                      x2="32"
+                      y1="7"
+                      y2="58"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#6dc7ff" />
+                      <stop offset=".699" stop-color="#e6abff" />
+                    </linearGradient>
+                    <path
+                      fill="url(#9yv_OTO3P9eepfu7Rtqera)"
+                      d="M53.27,26.96c0.28-1.05,0.42-2.11,0.42-3.17c0-6.86-5.58-12.43-12.43-12.43 c-0.77,0-1.56,0.07-2.35,0.23C36.54,8.67,33.06,7,29.28,7c-5.55,0-10.36,3.62-11.92,8.89C11.43,16.9,7.04,22.05,7.04,28.14 c0,3.45,1.43,6.72,3.93,9.07c-0.44,1.3-0.66,2.64-0.66,4c0,6.86,5.58,12.43,12.43,12.43c0.44,0,0.88-0.02,1.38-0.08 C26.5,56.39,29.93,58,33.63,58c5.88,0,10.96-4.19,12.16-9.88c6.32-0.63,11.17-5.91,11.17-12.35 C56.96,32.46,55.62,29.29,53.27,26.96z M38.25,35.88l-6.63,4l-6.5-4v-7.26l6.63-3.87l6.63,3.75L38.25,35.88z"
+                    />
+                    <linearGradient
+                      id="9yv_OTO3P9eepfu7Rtqerb"
+                      x1="32"
+                      x2="32"
+                      y1=".872"
+                      y2="62.679"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#1a6dff" />
+                      <stop offset="1" stop-color="#c822ff" />
+                    </linearGradient>
+                    <path
+                      fill="url(#9yv_OTO3P9eepfu7Rtqerb)"
+                      d="M53.274,26.955 c0.275-1.045,0.415-2.107,0.415-3.166c0-6.855-5.578-12.434-12.434-12.434c-0.766,0-1.553,0.079-2.35,0.235 C36.536,8.665,33.062,7,29.278,7c-5.549,0-10.353,3.622-11.913,8.891c-5.93,1.012-10.32,6.163-10.32,12.254 c0,3.448,1.424,6.715,3.93,9.07c-0.44,1.299-0.664,2.64-0.664,3.996c0,6.855,5.578,12.434,12.434,12.434 c0.433,0,0.874-0.027,1.38-0.087C26.501,56.389,29.934,58,33.633,58c5.875,0,10.96-4.192,12.152-9.878 c6.327-0.629,11.17-5.908,11.17-12.355C56.956,32.463,55.622,29.286,53.274,26.955z M51.689,23.789c0,0.646-0.07,1.293-0.193,1.937 l-12.293-7.185l-13.146,7.991v-4.91l12.814-7.972c0.813-0.191,1.615-0.295,2.383-0.295C47.008,13.355,51.689,18.036,51.689,23.789z M37.397,35.171l-5.563,3.316l-5.776-3.303v-6.311l5.465-3.322l-0.031,0.052l5.905,3.48V35.171z M29.278,9 c2.997,0,5.755,1.251,7.728,3.457l-12.948,8.054V34.04l-4.898-2.801V16.922C20.319,12.254,24.462,9,29.278,9z M9.044,28.145 c0-4.923,3.419-9.109,8.116-10.169v14.424l12.701,7.264l-5.227,3.115l-11.897-6.674C10.392,34.107,9.044,31.211,9.044,28.145z M12.311,41.211c0-0.955,0.138-1.902,0.4-2.828l11.954,6.706l12.732-7.588v6.27l-13.172,7.754c-0.57,0.078-1.043,0.12-1.48,0.12 C16.992,51.645,12.311,46.964,12.311,41.211z M33.633,56c-2.886,0-5.578-1.175-7.546-3.252l13.31-7.835V30.261l4.539,2.675V47.09 C43.192,52.173,38.773,56,33.633,56z M45.936,46.091V31.793l-6.539-3.853v-0.068h-0.115l-5.879-3.465l5.821-3.538l12.309,7.195 c2.174,1.981,3.422,4.782,3.422,7.703C54.956,41.055,51.07,45.406,45.936,46.091z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="flex justify-center pt-4 pb-10 image">
+                <a href=".svg" class="relative hover:cursor-none ">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 48 48"
+                    width="96px"
+                    height="96px"
+                  >
+                    <linearGradient
+                      id="lfK0TEarAX_CVWY9eruXya"
+                      x1="18.179"
+                      x2="37.232"
+                      y1="6.205"
+                      y2="21.237"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#0837c4" />
+                      <stop offset=".242" stop-color="#0b4bce" />
+                      <stop offset=".738" stop-color="#1071df" />
+                      <stop offset="1" stop-color="#127fe6" />
+                    </linearGradient>
+                    <path
+                      fill="url(#lfK0TEarAX_CVWY9eruXya)"
+                      d="M21.676,19.303c0,0,0.814-3.255,4.691-3.399h11.777c0,0-3.399-0.287-4.069-4.404	c-0.67-4.117-2.441-5.745-4.931-5.793c-2.489-0.048-3.638,2.585-3.926,3.495C24.931,10.112,21.676,19.303,21.676,19.303z"
+                    />
+                    <linearGradient
+                      id="lfK0TEarAX_CVWY9eruXyb"
+                      x1="8.61"
+                      x2="20.866"
+                      y1="36.864"
+                      y2="1.503"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#f8c704" />
+                      <stop offset=".065" stop-color="#f1c609" />
+                      <stop offset=".163" stop-color="#dcc319" />
+                      <stop offset=".281" stop-color="#babe31" />
+                      <stop offset=".415" stop-color="#8cb754" />
+                      <stop offset=".561" stop-color="#50ae7f" />
+                      <stop offset=".592" stop-color="#43ac89" />
+                      <stop offset=".617" stop-color="#41ad93" />
+                      <stop offset=".737" stop-color="#37b0be" />
+                      <stop offset=".845" stop-color="#30b2dd" />
+                      <stop offset=".936" stop-color="#2cb4f0" />
+                      <stop offset="1" stop-color="#2ab4f7" />
+                    </linearGradient>
+                    <path
+                      fill="url(#lfK0TEarAX_CVWY9eruXyb)"
+                      d="M19.234,29.261l6.032-20.25	c0,0,1.149-3.399,3.878-3.303H14.016c0,0-2.585,0-4.452,2.968c0,0-2.872,3.734-4.548,11.394s-1.005,8.09-1.005,8.09	s-0.431,4.213,6.032,3.878h4.979C15.021,32.037,18.037,32.085,19.234,29.261z"
+                    />
+                    <path
+                      d="M28.887,6.707l2.471-0.404c-0.596-0.358-1.31-0.544-2.05-0.584l-0.199-0.011 c-0.004,0-0.007,0-0.011-0.001c-0.016,0-0.031,0.002-0.048,0.002c-0.175-0.001-0.34,0.015-0.502,0.039 c-0.069,0.01-0.136,0.023-0.202,0.037c-0.105,0.023-0.206,0.052-0.305,0.084c-0.452,0.149-0.848,0.386-1.186,0.677 c-0.117,0.102-0.225,0.209-0.329,0.32c-0.761,0.811-1.182,1.833-1.34,2.334c-0.039,0.125-0.139,0.416-0.274,0.808l-2.218,7.444 c0.086-0.092,0.198-0.179,0.297-0.269c0.056-0.051,0.108-0.103,0.168-0.152c0.088-0.072,0.18-0.139,0.277-0.208 c0.166-0.118,0.341-0.231,0.537-0.333c0.025-0.013,0.043-0.03,0.069-0.043l2.131-7.154C26.174,9.296,27.066,6.787,28.887,6.707z"
+                      opacity=".05"
+                    />
+                    <path
+                      d="M28.864,6.207l1.476-0.34c0,0-0.686-0.176-1.252-0.155c-0.42,0.015-0.802,0.072-1.147,0.203	c-0.027,0.011-0.056,0.019-0.083,0.031c-0.081,0.033-0.159,0.073-0.236,0.112c-0.057,0.03-0.115,0.059-0.17,0.091	c-0.048,0.028-0.094,0.058-0.141,0.088c-0.085,0.056-0.169,0.114-0.249,0.176c-0.017,0.013-0.033,0.026-0.049,0.039	c-0.429,0.346-0.773,0.767-1.039,1.168c-0.006,0.009-0.012,0.017-0.017,0.026c-0.029,0.044-0.053,0.086-0.08,0.13	c-0.342,0.562-0.556,1.104-0.658,1.428c-0.018,0.058-0.05,0.152-0.091,0.274l-2.377,7.978c0.18-0.194,0.388-0.385,0.626-0.563	l2.305-7.738C25.685,9.143,26.684,6.292,28.864,6.207z"
+                      opacity=".07"
+                    />
+                    <linearGradient
+                      id="lfK0TEarAX_CVWY9eruXyc"
+                      x1="9.38"
+                      x2="27.188"
+                      y1="35.55"
+                      y2="35.358"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#ffb155" />
+                      <stop offset=".008" stop-color="#ffb055" />
+                      <stop offset=".475" stop-color="#eb7447" />
+                      <stop offset=".819" stop-color="#df4e3f" />
+                      <stop offset="1" stop-color="#da403c" />
+                    </linearGradient>
+                    <path
+                      fill="url(#lfK0TEarAX_CVWY9eruXyc)"
+                      d="M26.474,28.607	c0,0-0.814,3.255-4.691,3.399H10.006c0,0,3.399,0.287,4.069,4.404s2.441,5.745,4.931,5.793s3.638-2.585,3.926-3.495	C23.219,37.799,26.474,28.607,26.474,28.607z"
+                    />
+                    <path
+                      d="M19.255,41.171l-2.471,0.404c0.596,0.358,1.31,0.544,2.05,0.584l0.199,0.011 c0.004,0,0.007,0,0.011,0.001c0.016,0,0.031-0.002,0.048-0.002c0.175,0.001,0.34-0.015,0.502-0.039 c0.069-0.01,0.136-0.023,0.202-0.037c0.105-0.023,0.206-0.052,0.305-0.084c0.452-0.149,0.848-0.386,1.186-0.677 c0.117-0.102,0.225-0.209,0.329-0.32c0.761-0.811,1.182-1.833,1.34-2.334c0.039-0.125,0.139-0.416,0.274-0.808l2.218-7.444 c-0.086,0.092-0.198,0.179-0.297,0.269c-0.056,0.051-0.108,0.103-0.168,0.152c-0.088,0.072-0.18,0.139-0.277,0.208 c-0.166,0.118-0.341,0.231-0.537,0.333c-0.025,0.013-0.043,0.03-0.069,0.043l-2.131,7.154 C21.969,38.582,21.077,41.091,19.255,41.171z"
+                      opacity=".05"
+                    />
+                    <path
+                      d="M19.278,41.671l-1.476,0.34c0,0,0.686,0.176,1.252,0.155c0.42-0.015,0.802-0.072,1.147-0.203	c0.027-0.011,0.056-0.019,0.083-0.031c0.081-0.033,0.159-0.073,0.236-0.112c0.057-0.03,0.115-0.059,0.17-0.091	c0.048-0.028,0.094-0.058,0.141-0.088c0.085-0.056,0.169-0.114,0.249-0.176c0.017-0.013,0.033-0.026,0.049-0.039	c0.429-0.346,0.773-0.767,1.039-1.168c0.006-0.009,0.012-0.017,0.017-0.026c0.029-0.044,0.053-0.086,0.08-0.13	c0.342-0.562,0.556-1.104,0.658-1.428c0.018-0.058,0.05-0.152,0.091-0.274l2.377-7.978c-0.18,0.194-0.388,0.385-0.626,0.563	l-2.305,7.738C22.457,38.736,21.458,41.586,19.278,41.671z"
+                      opacity=".07"
+                    />
+                    <linearGradient
+                      id="lfK0TEarAX_CVWY9eruXyd"
+                      x1="28.874"
+                      x2="37.108"
+                      y1="43.472"
+                      y2="12.068"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" stop-color="#ffb152" />
+                      <stop offset=".531" stop-color="#f36284" />
+                      <stop offset=".994" stop-color="#a355e9" />
+                    </linearGradient>
+                    <path
+                      fill="url(#lfK0TEarAX_CVWY9eruXyd)"
+                      d="M28.915,18.65l-6.07,20.263	c0,0-1.111,3.386-3.839,3.29h15.128c0,0,2.585,0,4.452-2.968c0,0,2.872-3.734,4.548-11.394c1.676-7.66,1.005-8.09,1.005-8.09	s0.431-4.213-6.032-3.878h-4.979C33.128,15.873,30.112,15.826,28.915,18.65z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!--contact section-->
+      <section id="Contact" class="">
+        <h1
+          class="flex flex-col items-center py-6 text-6xl font-bold text-gray-500 hover:cursor-none relative"
+        >
+          Contact
+        </h1>
+        <div
+          class="flex flex-col justify-center items-center text-2xl text-white hover:text-yellow-900 cursor-pointer relative"
+        >
+          <h3 class="py-1 pt-10 text-white hover:text-yellow-800 font-semibold hover:scale-110 relative">
+            <span class="font-bold">E-Mail:</span>
+            shobhit3delhi333@gmail.com
+          </h3>
+          <h3 class="py-1 text-white hover:text-yellow-800 font-semibold  hover:scale-110 relative">
+            <span class="font-bold">Call Me:</span> 9625943868
+          </h3>
+          <h3 class="py-1 text-white hover:text-yellow-800 font-semibold hover:scale-110 relative ">
+            <span class="font-bold">Address:</span> PI-1st, Greater
+            Noida, G.B Nagar, U.P, India
+          </h3>
+          <h3 class="py-1 text-white hover:text-yellow-800 font-semibold"></h3>
+        </div>
+        <div class="flex items-center justify-center pt-4 pb-20">
+          <a
+            href="https://www.linkedin.com/in/shobhit-tripathi-a7198a266/overlay/about-this-profile/"
+            class="relative"
+            ><img
+              src="/linkedin-in-brands-solid.svg"
+              class="h-10 w-10 bg-white p-1 rounded-md hover:bg-sky-700"
+              alt=""
+          /></a>
+
+          <a href="https://github.com/Shobhit333Tripathi" class="relative"
+            ><svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 496 512"
+              class="w-12 h-12 ml-4 hover:text-white hover:scale-110 transition-all"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              ></path></svg
+          ></a>
+          <a
+            href="https://www.instagram.com/shobhi18t_tripathi/"
+            class="relative"
+            ><svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              class="w-12 h-12 ml-4 text-white hover:text-pink-500 hover:scale-110 transition-all"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              ></path></svg
+          ></a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
