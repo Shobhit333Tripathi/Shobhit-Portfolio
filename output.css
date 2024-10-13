@@ -647,6 +647,10 @@ video {
   height: 1.5rem;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -723,11 +727,6 @@ video {
   border-width: 2px;
 }
 
-.border-y-4 {
-  border-top-width: 4px;
-  border-bottom-width: 4px;
-}
-
 .border-x-4 {
   border-left-width: 4px;
   border-right-width: 4px;
@@ -771,6 +770,11 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -794,6 +798,11 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
 }
 
 .pb-10 {
@@ -933,11 +942,6 @@ video {
 
 .hover\:rounded-full:hover {
   border-radius: 9999px;
-}
-
-.hover\:border-y-8:hover {
-  border-top-width: 8px;
-  border-bottom-width: 8px;
 }
 
 .hover\:border-x-8:hover {
