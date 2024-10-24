@@ -9,6 +9,9 @@
       * {
         scroll-behavior: smooth;
       }
+      .port {
+        font-style: italic;
+      }
     </style>
   </head>
   <body class="">
@@ -17,120 +20,147 @@
         class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"
       ></div>
 
-      <nav class="h-full w-full bg-zinc-700 z-50 sticky top-0">
-        <ul
-          class="flex justify-end item-center px-10 pr-48 space-x-8 py-2 text-xl"
-        >
-          <li
-            class="text-3xl font-semibold text-white pr-52 font-mono transition-all"
-          >
-            <a href="#" class="hover:cursor-none text-white relative"
-              ><span class="font-extrabold text-5xl text-yellow-800">P</span
-              >ortfolio.</a
-            >
-          </li>
-          <li
-            class="pt-1 text-white hover:text-yellow-800 cursor-pointer relative"
-          >
-            <a
-              href="#About"
-              class="about font-bold text-white hover:text-yellow-800 cursor-pointer transition-all"
-              >About Me</a
-            >
-          </li>
-          <li
-            class="pt-1 text-white hover:text-yellow-800 cursor-pointer relative"
-          >
-            <a
-              href="#Projects"
-              class="projects font-bold hover:text-yellow-800 cursor-pointer transition-all"
-              id="projects"
-              >Projects</a
-            >
-          </li>
-          <li class="pt-1 text-white cursor-pointer relative">
-            <a
-              href="#Contact"
-              class="contact font-bold hover:text-yellow-800 cursor-pointer transition-all"
-              >Contact</a
-            >
-          </li>
-        </ul>
+      <nav class="bg-zinc-700 z-50 sticky top-0 w-full">
+        <div class="port flex justify-between items-center px-10 py-2">
+          <a href="#" class="text-3xl font-semibold text-white font-mono">
+            <span class="font-extrabold text-5xl text-yellow-800">P</span
+            >ortfolio.
+          </a>
+          <div class="md:hidden flex items-center">
+            <button id="menu-button" class="text-2xl text-white">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <ul id="menu" class="hidden md:flex space-x-16 px-10 text-lg">
+            <li>
+              <a
+                href="#Home"
+                class="font-bold text-white hover:text-yellow-800 transition-all"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#About"
+                class="font-bold text-white hover:text-yellow-800 transition-all"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Projects"
+                class="font-bold text-white hover:text-yellow-800 transition-all"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#Contact"
+                class="font-bold text-white hover:text-yellow-800 transition-all"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
-      <hr class="h-20" />
 
-      <div class="flex flex-col justify-center items-center relative">
-        <h1 class="mx-24 mt-8 text-7xl font-bold text-yellow-800">Hey !</h1>
-        <h1 class="mx-24 mt-4 text-6xl font-bold text-white">I'm</h1>
-        <h1 class="mx-24 my-4 text-6xl font-bold text-white">SHOBHIT.</h1>
-        <h3 class="text-4xl text-yellow-800 mx-28">
-          I am a Frontend Web Developer-
-        </h3>
-        <h3 class="text-4xl text-yellow-800 font-mono mx-2">
-          from Greater Noida, G.B Nagar, U.P, India.
-        </h3>
-        <button
+      <script>
+        const menuButton = document.getElementById("menu-button");
+        const menu = document.getElementById("menu");
+
+        menuButton.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        });
+      </script>
+
+      <hr class="" />
+      <section id="Home" class="flex w-full flex-col z-50">
+        <div class="flex flex-col justify-center items-center p-4 relative">
+          <h1 class="mx-4 mt-8 text-4xl md:text-7xl font-bold text-yellow-800">
+            Hey !
+          </h1>
+          <h1 class="mx-4 mt-4 text-3xl md:text-6xl font-bold text-white">
+            I'm
+          </h1>
+          <h1 class="mx-4 my-4 text-3xl md:text-6xl font-bold text-white">
+            SHOBHIT.
+          </h1>
+          <h3 class="text-2xl md:text-4xl text-yellow-800 mx-4 md:mx-28">
+            I am a Frontend Web Developer-
+          </h3>
+          <h3
+            class="text-2xl md:text-4xl text-yellow-800 font-mono mx-4 md:mx-2"
+          >
+            from Greater Noida, G.B Nagar, U.P, India.
+          </h3>
+          <button
           class="px-8 py-4 m-8 bg-slate-900 text-xl font-semibold rounded-2xl border-2 border-x-4 hover:border-x-8 hover:scale-x-105 border-gray-800 hover:border-slate-900 hover:rounded-full cursor-pointer hover:bg-slate-800 text-gray-500 hover:text-yellow-900 transition-all"
-        >
-          <a
-            href="https://drive.google.com/file/d/1EzWwYnivx1VduNfwN40bEqsU1Ry-NrcQ/view?usp=sharing"
-            target="_blank"
-            >Download CV</a
           >
-        </button>
-      </div>
-      <div class="flex justify-center pt-4 pb-20">
-        <a
-          href="https://www.linkedin.com/in/shobhit-tripathi-a7198a266/overlay/about-this-profile/"
-          class="relative"
-          ><img
-            src="./linkedin-in-brands-solid.svg"
-            class="h-6 w-6 bg-white p-1 rounded-md hover:bg-sky-700"
-            alt=""
-        /></a>
+            <a
+              href="https://drive.google.com/file/d/1EzWwYnivx1VduNfwN40bEqsU1Ry-NrcQ/view?usp=sharing"
+              target="_blank"
+              >Download CV</a
+            >
+          </button>
+        </div>
 
-        <a href="https://github.com/Shobhit333Tripathi" class="relative"
-          ><svg
-            stroke="currentColor"
-            fill="currentColor"
-            stroke-width="0"
-            viewBox="0 0 496 512"
-            class="w-6 h-6 ml-4 hover:text-white hover:scale-110 transition-all"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-            ></path></svg
-        ></a>
-        <a href="https://www.instagram.com/shobhi18t_tripathi/" class="relative"
-          ><svg
-            stroke="currentColor"
-            fill="currentColor"
-            stroke-width="0"
-            viewBox="0 0 448 512"
-            class="w-6 h-6 ml-4 text-white hover:text-pink-500 hover:scale-110 transition-all"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-            ></path></svg
-        ></a>
-      </div>
+        <div class="flex justify-center pt-4 pb-20">
+          <a
+            href="https://www.linkedin.com/in/shobhit-tripathi-a7198a266/overlay/about-this-profile/"
+            class="relative"
+            ><img
+              src="./linkedin-in-brands-solid.svg"
+              class="h-6 w-6 bg-white p-1 rounded-md hover:bg-sky-700"
+              alt=""
+          /></a>
+
+          <a href="https://github.com/Shobhit333Tripathi" class="relative"
+            ><svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 496 512"
+              class="w-6 h-6 ml-4 hover:text-white hover:scale-110 transition-all"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              ></path></svg
+          ></a>
+          <a
+            href="https://www.instagram.com/shobhi18t_tripathi/"
+            class="relative"
+            ><svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              class="w-6 h-6 ml-4 text-white hover:text-pink-500 hover:scale-110 transition-all"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              ></path></svg
+          ></a>
+        </div>
+      </section>
       <hr />
       <!--about scetion-->
       <section id="About" class="flex w-full flex-col z-50">
         <h1
-          class="flex flex-col items-center py-6 text-6xl font-bold text-gray-500 hover:cursor-none relative"
+          class="flex flex-row md:flex-col md:items-center justify-center text-4xl py-6 md:text-6xl font-bold text-gray-500 hover:cursor-none relative"
         >
           About Me
         </h1>
-        <div class="flex justify-between w-full">
-          <div class="para w-1/3 pb-10">
-            <p class="text-xl font-semibold pl-10 w-full text-white">
+        <div class="flex md:flex-row flex-col md:justify-between w-full">
+          <div class="para w-fit md:w-1/3 md:pb-10">
+            <p
+              class="text-base pl-4 md:text-xl md:font-semibold md:pl-10 w-full text-white"
+            >
               I’m <span class="font-extrabold">Shobhit Tripathi</span>, a
               passionate web developer currently studying at PIIT. I reside in
               the Cassia Estate Society Pocket A, Greater Noida, Gautam Buddh
@@ -144,7 +174,9 @@
               projects that drive positive change.
             </p>
           </div>
-          <div class="flex-col justify-center pt-40 pl-48 space-x-6">
+          <div
+            class="flex px-14 py-8 md:flex-col md:justify-center md:pt-4 md:pl-48 md:space-y-6"
+          >
             <div class="pl-4 relative">
               <a
                 href="https://www.linkedin.com/in/shobhit-tripathi-a7198a266/overlay/about-this-profile/"
@@ -188,9 +220,11 @@
                 ></path></svg
             ></a>
           </div>
-          <div class="flex w-1/2 tools">
+          <div class="flex md:flex-row flex-col md:w-1/2 tools">
             <div class="mx-auto">
-              <h2 class="text-4xl font-bold pt-16 text-white">
+              <h2
+                class="text-2xl font-semibold px-8 py-8 md:text-4xl md:font-bold md:pt-16 text-white"
+              >
                 TOOLS THAT I USE
               </h2>
               <div class="flex justify-center space-x-6 pt-4 image">
@@ -370,47 +404,59 @@
       <!--project section-->
       <section id="Projects" class="">
         <h1
-          class="flex flex-col items-center py-6 text-6xl font-bold text-gray-500 hover:cursor-none relative"
+          class="flex flex-col items-center py-6 text-4xl md:text-6xl font-bold text-gray-500"
         >
           Projects
         </h1>
-        <div class="text-white text-2xl py-2 px-12 h-96 relative">
-          Currently I am working on
-          <span class="font-extrabold text-4xl text-yellow-800">PHONE MANIA</span>.
-          <div class="text-xl text-white px-11 py-6 w-1/2 relative">This is a site where you can buy or sell old mobiles on a good price. The primary purpose of Phone Mania is to provide a reliable and convenient online platform for
-            individuals to buy and sell old mobile phones.</div>
+        <div
+          class="flex flex-col md:flex-row text-white text-lg md:text-2xl py-2 px-4 md:px-12 h-auto md:h-96"
+        >
+          <div class="mb-6 md:mb-0">
+            Currently I am working on
+            <span class="font-extrabold text-2xl md:text-4xl text-yellow-800"
+              >PHONE MANIA</span
+            >.
+            <div
+              class="text-base md:text-xl text-white px-4 md:px-11 py-6 w-full md:w-1/2"
+            >
+              This is a site where you can buy or sell old mobiles at a good
+              price. The primary purpose of Phone Mania is to provide a reliable
+              and convenient online platform for individuals to buy and sell old
+              mobile phones.
+            </div>
+          </div>
         </div>
       </section>
+
       <hr />
       <!--contact section-->
       <section id="Contact" class="">
         <h1
-          class="flex flex-col items-center py-6 text-6xl font-bold text-gray-500 hover:cursor-none relative"
+          class="flex flex-col items-center py-6 text-4xl md:text-6xl font-bold text-gray-500"
         >
           Contact
         </h1>
         <div
-          class="flex flex-col justify-center items-center text-2xl text-white hover:text-yellow-900 cursor-pointer relative"
+          class="flex flex-col justify-center items-center md:text-2xl text-white px-2 text-base"
         >
           <h3
-            class="py-1 pt-10 text-white hover:text-yellow-800 font-semibold hover:scale-110 relative"
+            class="py-2 md:py-1 pt-6 md:pt-10 text-white hover:text-yellow-800 font-semibold transition-all"
           >
-            <span class="font-bold">E-Mail:</span>
-            shobhit3delhi333@gmail.com
+            <span class="font-bold">E-Mail:</span> shobhit3delhi333@gmail.com
           </h3>
           <h3
-            class="py-1 text-white hover:text-yellow-800 font-semibold hover:scale-110 relative"
+            class="py-2 md:py-1 text-white hover:text-yellow-800 font-semibold transition-all"
           >
             <span class="font-bold">Call Me:</span> 9625943868
           </h3>
           <h3
-            class="py-1 text-white hover:text-yellow-800 font-semibold hover:scale-110 relative"
+            class="py-2 md:py-1 text-white hover:text-yellow-800 font-semibold transition-all"
           >
             <span class="font-bold">Address:</span> PI-1st, Greater Noida, G.B
             Nagar, U.P, India
           </h3>
-          <h3 class="py-1 text-white hover:text-yellow-800 font-semibold"></h3>
         </div>
+
         <div class="flex items-center justify-center pt-4 pb-20">
           <a
             href="https://www.linkedin.com/in/shobhit-tripathi-a7198a266/overlay/about-this-profile/"
